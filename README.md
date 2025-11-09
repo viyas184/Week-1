@@ -28,3 +28,43 @@ Next Steps
  5. Build a Simple Web Interface using Python Streamlit for testing classifications.
  6. Test the Application with real-world images of waste materials.
  7. Deploy and Document the Complete Project.
+    # Week-2
+    Week 2 was all about model training, evaluating the model
+    In Week 2, the focus was on training, testing, and validating the CNN model for the EcoSort AI project — a waste classification system built using Convolutional Neural Networks (CNNs) and Teachable Machine.
+The objective was to verify that the model correctly identifies various types of waste images such as plastic, paper, metal, cardboard, biological, clothes, shoes, and trash, supporting sustainability and efficient waste management.
+⚙️ Activities Performed
+
+Model Training
+
+The CNN model was trained using Google’s Teachable Machine on a custom waste dataset (sourced and refined from Kaggle).Each waste type was treated as a separate class to enhance classification accuracy.
+The final trained model was exported as keras_model.h5 with corresponding labels in labels.txt.
+
+Project Setup in VS Code
+A structured project directory was created:
+
+EcoSort_AI/
+├── model/
+│   ├── keras_model.h5
+│   ├── labels.txt
+│   └── test_image.jpg
+├── src/
+│   └── predict.py
+├── ecosort-env/  (virtual environment)
+
+The TensorFlow environment (ecosort-env) was configured successfully.Necessary libraries were installed: tensorflow, pillow, numpy, opencv-python, and streamlit.
+
+Model Testing
+
+The exported Keras model was loaded into the predict.py script.A single test image was passed through the model to evaluate predictions.The output displayed the predicted waste type along with a confidence score, proving successful model inference inside VS Code.
+
+Debugging & Path Fixes
+
+Issues related to file paths and model compatibility were resolved.Environment configuration was validated, and model execution logs were recorded.
+
+🚀 Next Steps (Week 3 Preview)
+
+In Week 3, the focus will be on:
+*Integrating Jupyter Notebook for visualization and explanation.
+*Testing with multiple images for each class.
+*Plotting accuracy graphs and confusion matrices.
+*completing the completed project and finally the PPT works
