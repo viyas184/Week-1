@@ -1,0 +1,8 @@
+0 biological
+1 cardboard
+2 clothes
+3 metal
+4 plastic
+5 paper
+6 shoes
+7 trash
